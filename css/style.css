@@ -110,10 +110,6 @@ nav.sticky .menu-btn{
   flex-direction: column;
   justify-content: center;
 }
-.home .text-one{
-  font-size: 25px;
-  color: #0E2431;
-}
 .home .text-two{
   color: #0E2431;
   font-size: 75px;
@@ -404,6 +400,7 @@ section  .topic{
     gap: 10px;
     flex-wrap: wrap;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .skill-box {

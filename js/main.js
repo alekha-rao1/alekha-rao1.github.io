@@ -64,3 +64,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+//show all projects button
+document.getElementById('showAllBtn').addEventListener('click', function() {
+  const projectItems = document.querySelectorAll('.project-item');
+
+  projectItems.forEach(item => {
+      item.style.display = 'block';
+  })
+});

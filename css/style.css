@@ -478,6 +478,22 @@ section  .topic{
     padding-top: 0px;
   }
 
+  /* Show All button styles */
+#showAllBtn {
+  display: block;
+  margin: 2em auto;
+  padding: 0.5em 2em;
+  background-color: #3FA2F6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+#showAllBtn:hover {
+  background-color: #0056b3;
+}
+
 
 /* Contact Me CSS */
 
@@ -558,6 +574,8 @@ footer .text span a:hover{
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
 }
+
+
 
 
 

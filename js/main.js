@@ -73,3 +73,37 @@ document.getElementById('showAllBtn').addEventListener('click', function() {
       item.style.display = 'block';
   })
 });
+
+function openModal(courseId) {
+  const courseTitle = document.querySelector(`[onclick="openModal('${courseId}')"] h5`).innerText;
+  const courseDescription = document.getElementById(courseId).innerHTML;
+
+  document.getElementById('modalTitle').innerText = courseTitle;
+  document.getElementById('modalText').innerHTML = courseDescription;
+
+  document.getElementById('courseModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('courseModal').style.display = "none";
+}
+
+window.onclick = function(event) {
+  var modal = document.getElementById('courseModal');
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function toggleExperiences() {
+  const moreExperiences = document.getElementById('more-experiences');
+  const showMoreBtn = document.getElementById('showMoreBtn');
+
+  if (moreExperiences.style.display === "none") {
+    moreExperiences.style.display = "flex";
+    showMoreBtn.innerText = "Show Less";
+  } else {
+    moreExperiences.style.display = "none";
+    showMoreBtn.innerText = "Show More";
+  }
+}

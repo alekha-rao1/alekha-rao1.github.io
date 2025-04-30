@@ -77,44 +77,81 @@
 </section>
 
 <!-- Experience section Start -->
-    <!-- Experience section Start -->
-    <section class="experience" id="experience">
-        <div class="content">
-            <div class="title"><span>My Work Experience</span></div>
-            <div class="text">
-            <div class="experience-details">
-              <div class="experience-item">
-                <h3>Millenium - Incoming Summer 2025 Software Engineering Intern</h3>
-                <p><strong>London, UK | UPCOMING  </strong></p>
-              </div>
-                <div class="experience-item">
-                  <h3>Tufts JumboCode - Software Developer</h3>
-                  <p><strong>Medford, MA | 09/2024 - NOW </strong></p>
-                </div>
-                <div class="experience-item">
-                  <h3>Tufts University - Research Assistant at Human Interaction Lab</h3>
-                  <p><strong>Medford, MA | 09/2024 - 12/2024 </strong></p>
-                </div>
-                <div class="experience-item">
-                    <h3>BLP Industry - Artificial Intelligence Development Intern</h3>
-                    <p><strong>Bangalore, INDIA | 06/2024 - 08/2024 </strong></p>
-                </div>
-                <div class="experience-item">
-                    <h3>Ernst & Young - Technology Consulting Intern</h3>
-                    <p><strong>Singapore, SINGAPORE | 06/2023 - 08/2023</strong></p>
-                </div>
-                <div class="experience-item">
-                    <h3>Elev8.vc - Deep Tech Research Intern</h3>
-                    <p><strong>Singapore, SINGAPORE | 06/2021 - 07/2021</strong></p>
-                </div>
-                For more information about my work experience, download my resume below!
-                <div class="button">
-                    <a class="fcc-btn" href="resume/resume.pdf">Download CV</a>
-                </div>
-            </div>
-            </div>
+<!-- Experience section Start -->
+<section class="experience" id="experience">
+  <div class="content">
+    <div class="title"><span>My Work Experience</span></div>
+    <div class="experience-details">
+
+      <div class="experience-item">
+        <h3>Millennium</h3>
+        <p class="role">Incoming Summer 2025 Software Engineering Intern</p>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> London, UK</p>
+        <p class="dates"><i class="fas fa-calendar-alt"></i> UPCOMING</p>
+      </div>
+
+      <div class="experience-item">
+        <h3>Break Through Tech MIT</h3>
+        <p class="role">AI/ML Fellow</p>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> Cambridge, MA</p>
+        <p class="dates"><i class="fas fa-calendar-alt"></i> 04/2025 – Present</p>
+      </div>
+
+      <div class="experience-item">
+        <h3>Tufts JumboCode</h3>
+        <p class="role">Software Developer</p>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> Medford, MA</p>
+        <p class="dates"><i class="fas fa-calendar-alt"></i> 09/2024 – Present</p>
+      </div>
+
+      <!-- Hidden experiences -->
+      <div id="more-experiences" style="display: none;">
+
+        <div class="experience-item">
+          <h3>Tufts University – Human Interaction Lab</h3>
+          <p class="role">Research Assistant</p>
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Medford, MA</p>
+          <p class="dates"><i class="fas fa-calendar-alt"></i> 09/2024 – 12/2024</p>
         </div>
-    </section>
+
+        <div class="experience-item">
+          <h3>BLP Industry</h3>
+          <p class="role">Artificial Intelligence Development Intern</p>
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+          <p class="dates"><i class="fas fa-calendar-alt"></i> 06/2024 – 08/2024</p>
+        </div>
+
+        <div class="experience-item">
+          <h3>Ernst & Young</h3>
+          <p class="role">Technology Consulting Intern</p>
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Singapore</p>
+          <p class="dates"><i class="fas fa-calendar-alt"></i> 06/2023 – 08/2023</p>
+        </div>
+
+        <div class="experience-item">
+          <h3>Elev8.vc</h3>
+          <p class="role">Deep Tech Research Intern</p>
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Singapore</p>
+          <p class="dates"><i class="fas fa-calendar-alt"></i> 06/2021 – 07/2021</p>
+        </div>
+
+      </div>
+
+      <!-- Show More Button -->
+      <div class="show-more-container">
+        <button id="showMoreBtn" class="fcc-btn" onclick="toggleExperiences()">Show More</button>
+      </div>
+
+      <div class="resume-button">
+        <p>For more details, download my resume:</p>
+        <a class="fcc-btn" href="resume/resume.pdf">Download CV</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
 
 <!-- Education section Start -->
@@ -130,33 +167,53 @@
                 <div class="relevant-coursework">
                     <h4>Relevant Coursework</h4>
                     <p> While I cannot share my work from these courses publicly, I would be happy to share the github repositories for each course if you are interested in seeing some more of my work.</p><br>
+                    <p class="course-note">Click on a course title to view more details.</p>
                     <div class="coursework-container">
-                        <div class="course-item">
-                          <h5>COMP135: Introduction To Machine Learning And Data Mining</h5>
-                          <p> An overview of methods whereby computers can learn from data or experience and make decisions accordingly. Topics include supervised learning, unsupervised learning, reinforcement learning, and knowledge extraction from large databases with applications to science, engineering, and medicine. This course was taught entirelhy in Python, and used libraries such as scikitlearn.   </p>
+                      <div class="course-item hoverable" onclick="openModal('comp135')">
+                        <h5>COMP135: Introduction To Machine Learning And Data Mining</h5>
+                      </div>                      
+                      <div id="comp135" class="course-description" style="display: none;">
+                        An overview of methods whereby computers can learn from data or experience and make decisions accordingly. Topics include supervised learning, unsupervised learning, reinforcement learning, and knowledge extraction from large databases with applications to science, engineering, and medicine. This course was taught entirely in Python, and used libraries such as scikit-learn.
                       </div>
-                        <div class="course-item">
+                      <div class="course-item hoverable" onclick="openModal('comp121')">
                           <h5>COMP121: Software Engineering</h5>
-                          <p> Core principles and ideas that enable development of large-scale software systems, with a focus on programming. Abstraction, modularity, design patterns, specification, testing, verification, and debugging. This course was taught entirely in Java.                           </p>
                       </div>
-                        <div class="course-item">
-                          <h5>COMP160: Alogrithms</h5>
-                          <p> Introduction to the study of algorithms. Strategies such as divide-and-conquer, greedy methods, and dynamic programming. Graph algorithms, sorting, searching, integer arithmetic, hashing, and NP-complete problems.  </p>
+                      <div id="comp121" class="course-description" style="display: none;">
+                        Core principles and ideas that enable development of large-scale software systems, with a focus on programming. Abstraction, modularity, design patterns, specification, testing, verification, and debugging. This course was taught entirely in Java.                        
                       </div>
-                        <div class="course-item">
-                            <h5>COMP40: Machine Structures and Assembly Language Programming</h5>
-                            <p> A deep dive into both high-level programming design and the low-level structure of computing machines. This course was entirely in C and we additionally learned how to read and write Assembly Language.  </p>
+                      <div class="course-item hoverable" onclick="openModal('comp160')">
+                          <h5>COMP160: Algorithms</h5>
+                      </div>
+                      <div id="comp160" class="course-description" style="display: none;">
+                        Introduction to the study of algorithms. Strategies such as divide-and-conquer, greedy methods, and dynamic programming. Graph algorithms, sorting, searching, integer arithmetic, hashing, and NP-complete problems.                      
+                      </div>
+                      <div class="course-item hoverable" onclick="openModal('comp40')">
+                        <h5>COMP40: Machine Structures and Assembly Language Programming</h5>
                         </div>
-                        <div class="course-item">
-                            <h5>COMP20: Web Programming</h5>
-                            <p> An introduction to techniques and practices for developing web applications. This course covered a comprehensive range of web technologies, including HTML, CSS, JavaScript, SQL, NoSQL, and APIs. It provided in-depth knowledge on how to build and deploy full-scale web applications for diverse use cases.  </p>
+                        <div id="comp40" class="course-description" style="display: none;">
+                          A deep dive into both high-level programming design and the low-level structure of computing machines. This course was entirely in C and we additionally learned how to read and write Assembly Language.                     
                         </div>
-                        <div class="course-item">
+                        <div class="course-item hoverable" onclick="openModal('comp20')">
+                          <h5>COMP20: Web Programming</h5>
+                        </div>
+                        <div id="comp20" class="course-description" style="display: none;">
+                          An introduction to techniques and practices for developing web applications. This course covered a comprehensive range of web technologies, including HTML, CSS, JavaScript, SQL, NoSQL, and APIs. It provided in-depth knowledge on how to build and deploy full-scale web applications for diverse use cases.                  
+                        </div>
+                        <div class="course-item hoverable" onclick="openModal('comp15')">
                             <h5>COMP15: Data Structures</h5>
-                            <p>This course offered an intensive exploration of employing diverse data structures and algorithms to tackle significant programming projects in C++. Emphasis was placed on fundamental data structures such as arrays, linked lists, trees, graphs, and hash tables.   </p>
-                            
+                        </div>
+                        <div id="comp15" class="course-description" style="display: none;">
+                          This course offered an intensive exploration of employing diverse data structures and algorithms to tackle significant programming projects in C++. Emphasis was placed on fundamental data structures such as arrays, linked lists, trees, graphs, and hash tables.
                         </div>
                     </div>
+                    <!-- Modal Structure -->
+                  <div id="courseModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <h4 id="modalTitle"></h4>
+                      <p id="modalText"></p>
+                    </div>
+                  </div>
                 </div>
             </div> 
         </div>
@@ -170,25 +227,24 @@
     <div class="content">
         <div class="title"><span>My Technical Skills</span></div>
         <div class="text">
-            These are the technical skills I have aquired and feel comfortable working with at this point in my career. 
-        <div class="skills-container">
-            <div class="skill-box" data-skill="html">HTML</a></div>
-            <div class="skill-box" data-skill="css">CSS</div>
-            <div class="skill-box" data-skill="javascript">JavaScript</div>
-            <div class="skill-box" data-skill="python">Python</div>
-            <div class="skill-box" data-skill="C">C</div>
-            <div class="skill-box" data-skill="C++">C++</div>
-            <div class="skill-box" data-skill="php">PHP</div>
-            <div class="skill-box" data-skill="sql">SQL</div>
-            <div class="skill-box" data-skill="nosql">NoSQL</div>
-            <div class="skill-box" data-skill="api">REST APIs</div>
-            <div class="skill-box" data-skill="git">Git</div>
-            <div class="skill-box" data-skill="opencv">Open CV</div>
-            <div class="skill-box" data-skill="yolo">YOLO</div>
-            <div class="skill-box" data-skill="yolo">Java</div>
-        </div>
+            <div class="skills-container">
+              <div class="skill-box" data-skill="html">HTML</div>
+              <div class="skill-box" data-skill="css">CSS</div>
+              <div class="skill-box" data-skill="javascript">JavaScript</div>
+              <div class="skill-box" data-skill="python">Python</div>
+              <div class="skill-box" data-skill="c">C</div>
+              <div class="skill-box" data-skill="cpp">C++</div>
+              <div class="skill-box" data-skill="php">PHP</div>
+              <div class="skill-box" data-skill="sql">SQL</div>
+              <div class="skill-box" data-skill="nosql">NoSQL</div>
+              <div class="skill-box" data-skill="git">Git</div>
+              <div class="skill-box" data-skill="opencv">OpenCV</div>
+              <div class="skill-box" data-skill="yolo">YOLO</div>
+              <div class="skill-box" data-skill="java">Java</div>
+              <div class="skill-box" data-skill="react">React</div>
+            </div>
         <br>
-        To see projects from a specific skill, click on a skill above and the projects below will be filtered. 
+        <p class="project-filter-note">Click a skill to filter projects by technology.</p>
         </div>
     </div>
 </section>
@@ -198,7 +254,9 @@
     <div class="content">
         <div class="title"><span>Projects</span></div>
         <div class="text">
-        <button id="showAllBtn">Show All Projects</button>
+          <div class="show-more-container">
+            <button id="showAllBtn" class="fcc-btn">Show All Projects</button>
+          </div>
         <div class="project-container">
             <div class="project-item" data-skills="html,css,javascript,php">
                 <img src="images/portfolio.png">
@@ -228,20 +286,17 @@
 
 
 
-
-
-
 <!-- Contact Me section Start -->
 <section class="contact" id="contact">
   <div class="content">
     <div class="title"><span>Contact Me</span></div>
-    <div class="form-container">
-        <form action="send_email.php" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="text" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> <a href="mailto:alekharao01@gmail.com">alekha.rao@tufts.edu</a></p>
+      <p><i class="fas fa-phone-alt"></i> <span>+1 (805) 220 8666</span></p>
+      <p><i class="fas fa-map-marker-alt"></i> <span>Medford, MA</span></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/alekha-rao-a33084240" target="_blank">LinkedIn Profile</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/alekha-rao1" target="_blank">GitHub Profile</a></p>
+    </div>
   </div>
 </section>
 
